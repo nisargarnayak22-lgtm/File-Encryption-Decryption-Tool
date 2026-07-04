@@ -79,18 +79,6 @@ gcc main.c -o main
 
 ![File Decryption](screenshot/decrypt.png)
 
-### 📄 Input File
-
-![Input File](screenshot/input-file.png)
-
-### 🔐 Encrypted File
-
-![Encrypted File](screenshot/encrypted-file.png)
-
-### 📄 Decrypted File
-
-![Decrypted File](screenshot/decrypted-file.png)
-
 ---
 
 ## 📚 Concepts Used
