@@ -65,7 +65,7 @@ gcc main.c -o main
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshot
 
 ### 🏠 Main Menu
 
