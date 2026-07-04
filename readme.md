@@ -69,27 +69,27 @@ gcc main.c -o main
 
 ### 🏠 Main Menu
 
-![Main Menu](screenshots/menu.png)
+![Main Menu](screenshot/menu.png)
 
 ### 🔒 File Encryption
 
-![File Encryption](screenshots/encrypt.png)
+![File Encryption](screenshot/encrypt.png)
 
 ### 🔓 File Decryption
 
-![File Decryption](screenshots/decrypt.png)
+![File Decryption](screenshot/decrypt.png)
 
 ### 📄 Input File
 
-![Input File](screenshots/input-file.png)
+![Input File](screenshot/input-file.png)
 
 ### 🔐 Encrypted File
 
-![Encrypted File](screenshots/encrypted-file.png)
+![Encrypted File](screenshot/encrypted-file.png)
 
 ### 📄 Decrypted File
 
-![Decrypted File](screenshots/decrypted-file.png)
+![Decrypted File](screenshot/decrypted-file.png)
 
 ---
 
