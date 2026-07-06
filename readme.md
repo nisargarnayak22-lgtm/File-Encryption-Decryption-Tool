@@ -181,41 +181,23 @@ gcc main.c -o main
 
 ## 📸 Screenshot
 
-### 🔐 Login
+## 📸 Screenshots
 
-![Login](screenshots/login.png)
+### Login
 
----
+![Login](screenshots/Login.png)
 
-### 🏠 Main Menu
+### Main Menu
 
-![Main Menu](screenshots/menu-v2.png)
+![Main Menu](screenshots/menu.png)
 
----
+### Encrypt
 
-### 🔒 Encrypt File
+![Encrypt](screenshots/encrypt.png)
 
-![Encrypt](screenshots/encrypt-v2.png)
+### Decrypt
 
----
-
-### 🔓 Decrypt File
-
-![Decrypt](screenshots/decrypt-v2.png)
-
----
-
-### 📜 Activity Log
-
-![Activity Log](screenshots/log.png)
-
----
-
-### ℹ️ About
-
-![About](screenshots/about.png)
-
----
+![Decrypt](screenshots/decrypt.png)
 
 ## 📚 Concepts Used
 
