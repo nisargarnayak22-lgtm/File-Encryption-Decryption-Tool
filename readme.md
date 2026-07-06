@@ -179,17 +179,15 @@ gcc main.c -o main
 
 ---
 
-## 📸 Screenshot
-
 ## 📸 Screenshots
-
-### Login
-
-![Login](screenshots/Login.png)
 
 ### Main Menu
 
 ![Main Menu](screenshots/menu.png)
+
+### Login
+
+![Login](screenshots/Login.png)
 
 ### Encrypt
 
