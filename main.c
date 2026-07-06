@@ -1,8 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <time.h>
 
+void login();
 void encryptFile();
 void decryptFile();
+void viewLog();
+void about();
+void writeLog(char action[]);
+
+int loggedIn = 0;
 
 int main()
 {
@@ -11,37 +19,114 @@ int main()
     do
     {
         printf("\n=========================================\n");
-        printf("     FILE ENCRYPTION & DECRYPTION TOOL\n");
+        printf("   SECURE FILE ENCRYPTION TOOL V2.0\n");
         printf("=========================================\n");
-        printf("1. Encrypt File\n");
-        printf("2. Decrypt File\n");
-        printf("3. Exit\n");
+        printf("1. Login\n");
+        printf("2. Encrypt File\n");
+        printf("3. Decrypt File\n");
+        printf("4. View Activity Log\n");
+        printf("5. About\n");
+        printf("6. Exit\n");
         printf("=========================================\n");
 
         printf("Enter your choice: ");
-        scanf("%d", &choice);
+        scanf("%d",&choice);
 
         switch(choice)
         {
             case 1:
-                encryptFile();
+                login();
                 break;
 
             case 2:
-                decryptFile();
+                if(loggedIn)
+                    encryptFile();
+                else
+                    printf("\nPlease Login First!\n");
                 break;
 
             case 3:
-                printf("\nThank you for using the program!\n");
+                if(loggedIn)
+                    decryptFile();
+                else
+                    printf("\nPlease Login First!\n");
+                break;
+
+            case 4:
+                if(loggedIn)
+                    viewLog();
+                else
+                    printf("\nPlease Login First!\n");
+                break;
+
+            case 5:
+                about();
+                break;
+
+            case 6:
+                printf("\nThank You!\n");
                 break;
 
             default:
                 printf("\nInvalid Choice!\n");
         }
 
-    } while(choice != 3);
+    }while(choice!=6);
 
     return 0;
+}
+void login()
+{
+    char username[30];
+    char password[30];
+
+    printf("\nUsername : ");
+    scanf("%s",username);
+
+    printf("Password : ");
+    scanf("%s",password);
+
+    if(strcmp(username,"admin")==0 &&
+       strcmp(password,"admin123")==0)
+    {
+        loggedIn=1;
+        printf("\nLogin Successful!\n");
+        writeLog("Login Successful");
+    }
+    else
+    {
+        printf("\nInvalid Username or Password!\n");
+        writeLog("Failed Login");
+    }
+}
+
+void about()
+{
+    printf("\n=================================\n");
+    printf("Secure File Encryption Tool\n");
+    printf("Version : 2.0\n");
+    printf("Language : C\n");
+    printf("Author : Nisarga Nayak\n");
+    printf("B.Tech Networks\n");
+    printf("=================================\n");
+}
+
+void writeLog(char action[])
+{
+    FILE *fp;
+    time_t t;
+
+    fp=fopen("log.txt","a");
+
+    if(fp==NULL)
+        return;
+
+    t=time(NULL);
+
+    fprintf(fp,"%s : %s",ctime(&t),action);
+    fprintf(fp,"\n");
+
+    fclose(fp);
 }
 void encryptFile()
 {
@@ -52,10 +137,10 @@ void encryptFile()
     int ch;
 
     printf("\nEnter Input File Name: ");
-    scanf("%99s", inputFile);
+    scanf("%s", inputFile);
 
     printf("Enter Output File Name: ");
-    scanf("%99s", outputFile);
+    scanf("%s", outputFile);
 
     printf("Enter Encryption Key: ");
     scanf("%d", &key);
@@ -85,11 +170,16 @@ void encryptFile()
     fclose(input);
     fclose(output);
 
-    printf("\n=========================================\n");
+    printf("\n=====================================\n");
     printf("File Encrypted Successfully!\n");
-    printf("Encrypted File: %s\n", outputFile);
-    printf("Encryption Key: %d\n", key);
-    printf("=========================================\n");
+    printf("Input File      : %s\n", inputFile);
+    printf("Encrypted File  : %s\n", outputFile);
+    printf("Encryption Key  : %d\n", key);
+    printf("=====================================\n");
+
+    char logMessage[200];
+    sprintf(logMessage, "Encrypted %s -> %s (Key=%d)", inputFile, outputFile, key);
+    writeLog(logMessage);
 }
 void decryptFile()
 {
@@ -100,10 +190,10 @@ void decryptFile()
     int ch;
 
     printf("\nEnter Encrypted File Name: ");
-    scanf("%99s", inputFile);
+    scanf("%s", inputFile);
 
     printf("Enter Output File Name: ");
-    scanf("%99s", outputFile);
+    scanf("%s", outputFile);
 
     printf("Enter Decryption Key: ");
     scanf("%d", &key);
@@ -133,9 +223,41 @@ void decryptFile()
     fclose(input);
     fclose(output);
 
-    printf("\n=========================================\n");
+    printf("\n=====================================\n");
     printf("File Decrypted Successfully!\n");
-    printf("Decrypted File: %s\n", outputFile);
-    printf("Decryption Key: %d\n", key);
-    printf("=========================================\n");
+    printf("Encrypted File : %s\n", inputFile);
+    printf("Output File    : %s\n", outputFile);
+    printf("Decryption Key : %d\n", key);
+    printf("=====================================\n");
+
+    char logMessage[200];
+    sprintf(logMessage, "Decrypted %s -> %s (Key=%d)", inputFile, outputFile, key);
+    writeLog(logMessage);
+}
+
+void viewLog()
+{
+    FILE *fp;
+    char ch;
+
+    fp = fopen("log.txt", "r");
+
+    if(fp == NULL)
+    {
+        printf("\nNo Activity Log Found!\n");
+        return;
+    }
+
+    printf("\n=====================================\n");
+    printf("          ACTIVITY LOG\n");
+    printf("=====================================\n\n");
+
+    while((ch = fgetc(fp)) != EOF)
+    {
+        putchar(ch);
+    }
+
+    fclose(fp);
+
+    printf("\n=====================================\n");
 }
