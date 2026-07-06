@@ -193,11 +193,11 @@ gcc main.c -o main
 
 ### Encrypt
 
-![Encrypt](screenshots/encrypt.png)
+![Encrypt](screenshots/encrypt-v2.png)
 
 ### Decrypt
 
-![Decrypt](screenshots/decrypt.png)
+![Decrypt](screenshots/decrypt-v2.png)
 
 ## 📚 Concepts Used
 
