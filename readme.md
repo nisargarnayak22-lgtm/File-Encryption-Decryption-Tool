@@ -203,6 +203,10 @@ gcc main.c -o main
 
 ![about](screenshots/about.png)
 
+### view activity log
+
+![activity log](screenshots/log.png)
+
 ## 📚 Concepts Used
 
 - Functions
