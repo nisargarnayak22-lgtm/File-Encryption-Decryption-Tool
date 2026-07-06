@@ -183,7 +183,7 @@ gcc main.c -o main
 
 ### Main Menu
 
-![Main Menu](screenshots/menu.png)
+![Main Menu](screenshots/menu-v2.png)
 
 ### Login
 
