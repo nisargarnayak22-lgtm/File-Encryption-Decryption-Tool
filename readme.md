@@ -103,11 +103,150 @@ gcc main.c -o main
 * Enhanced Security Techniques
 
 ---
+# 🔐 Secure File Encryption & Decryption Tool (Version 2)
+
+A secure file encryption and decryption application developed in **C Programming**. This Version 2 release introduces **user authentication, activity logging, an about section, and user-defined encryption keys**, making the application more secure and user-friendly.
+
+---
+
+## 🚀 Version 2 Features
+
+- 🔐 User Login Authentication
+- 🔒 Encrypt Text Files
+- 🔓 Decrypt Encrypted Files
+- 🔑 User-defined Encryption & Decryption Key
+- 📂 Custom Input & Output File Names
+- 📜 Activity Log (`log.txt`)
+- ℹ️ About Section
+- ⚠️ Error Handling
+- 💻 Console-Based Interface
+
+---
+
+## 🛠 Technologies Used
+
+- C Programming
+- GCC Compiler
+- File Handling
+- String Handling (`string.h`)
+- Time Library (`time.h`)
+- Standard C Library
+
+---
+
+## 📂 Project Structure
+
+```
+Secure-File-Encryption-Tool/
+│── main.c
+│── input.txt
+│── encrypted.txt
+│── decrypted.txt
+│── log.txt
+│── README.md
+└── screenshots/
+    ├── login.png
+    ├── menu-v2.png
+    ├── encrypt-v2.png
+    ├── decrypt-v2.png
+    ├── log.png
+    └── about.png
+```
+
+---
+
+## ⚙️ How to Compile
+
+```bash
+gcc main.c -o main
+```
+
+---
+
+## ▶️ How to Run
+
+```bash
+./main
+```
+
+---
+
+## 🔑 Default Login Credentials
+
+**Username:** `admin`
+
+**Password:** `admin123`
+
+---
+
+## 📸 Screenshots
+
+### 🔐 Login
+
+![Login](screenshots/login.png)
+
+---
+
+### 🏠 Main Menu
+
+![Main Menu](screenshots/menu-v2.png)
+
+---
+
+### 🔒 Encrypt File
+
+![Encrypt](screenshots/encrypt-v2.png)
+
+---
+
+### 🔓 Decrypt File
+
+![Decrypt](screenshots/decrypt-v2.png)
+
+---
+
+### 📜 Activity Log
+
+![Activity Log](screenshots/log.png)
+
+---
+
+### ℹ️ About
+
+![About](screenshots/about.png)
+
+---
+
+## 📚 Concepts Used
+
+- Functions
+- File Handling
+- User Authentication
+- Caesar Cipher Encryption
+- Activity Logging
+- String Handling
+- Conditional Statements
+- Loops
+
+---
+
+## 🔮 Future Improvements
+
+- XOR Encryption
+- AES Encryption
+- Password Masking
+- Multiple User Accounts
+- Binary File Encryption
+- GUI Version
+- Stronger Encryption Algorithms
+
+---
 
 ## 👨‍💻 Author
 
 **Nisarga Nayak**
 
-**B.Tech (Networks)**
+**B.Tech Networks**
+
 
 
