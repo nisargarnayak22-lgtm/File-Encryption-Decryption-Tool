@@ -69,15 +69,15 @@ gcc main.c -o main
 
 ### 🏠 Main Menu
 
-![Main Menu](screenshot/menu.png)
+![Main Menu](screenshots/menu.png)
 
 ### 🔒 File Encryption
 
-![File Encryption](screenshot/encrypt.png)
+![File Encryption](screenshots/encrypt.png)
 
 ### 🔓 File Decryption
 
-![File Decryption](screenshot/decrypt.png)
+![File Decryption](screenshots/decrypt.png)
 
 ---
 
@@ -183,37 +183,37 @@ gcc main.c -o main
 
 ### 🔐 Login
 
-![Login](screenshot/login.png)
+![Login](screenshots/login.png)
 
 ---
 
 ### 🏠 Main Menu
 
-![Main Menu](screenshot/menu-v2.png)
+![Main Menu](screenshots/menu-v2.png)
 
 ---
 
 ### 🔒 Encrypt File
 
-![Encrypt](screenshot/encrypt-v2.png)
+![Encrypt](screenshots/encrypt-v2.png)
 
 ---
 
 ### 🔓 Decrypt File
 
-![Decrypt](screenshot/decrypt-v2.png)
+![Decrypt](screenshots/decrypt-v2.png)
 
 ---
 
 ### 📜 Activity Log
 
-![Activity Log](screenshot/log.png)
+![Activity Log](screenshots/log.png)
 
 ---
 
 ### ℹ️ About
 
-![About](screenshot/about.png)
+![About](screenshots/about.png)
 
 ---
 
