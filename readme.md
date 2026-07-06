@@ -199,13 +199,13 @@ gcc main.c -o main
 
 ![Decrypt](screenshots/decrypt-v2.png)
 
-### About
-
-![about](screenshots/about.png)
-
 ### view activity log
 
 ![activity log](screenshots/log.png)
+
+### About
+
+![about](screenshots/about.png)
 
 ## 📚 Concepts Used
 
