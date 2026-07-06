@@ -179,41 +179,41 @@ gcc main.c -o main
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshot
 
 ### 🔐 Login
 
-![Login](screenshots/login.png)
+![Login](screenshot/login.png)
 
 ---
 
 ### 🏠 Main Menu
 
-![Main Menu](screenshots/menu-v2.png)
+![Main Menu](screenshot/menu-v2.png)
 
 ---
 
 ### 🔒 Encrypt File
 
-![Encrypt](screenshots/encrypt-v2.png)
+![Encrypt](screenshot/encrypt-v2.png)
 
 ---
 
 ### 🔓 Decrypt File
 
-![Decrypt](screenshots/decrypt-v2.png)
+![Decrypt](screenshot/decrypt-v2.png)
 
 ---
 
 ### 📜 Activity Log
 
-![Activity Log](screenshots/log.png)
+![Activity Log](screenshot/log.png)
 
 ---
 
 ### ℹ️ About
 
-![About](screenshots/about.png)
+![About](screenshot/about.png)
 
 ---
 
