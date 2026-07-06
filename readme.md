@@ -199,6 +199,10 @@ gcc main.c -o main
 
 ![Decrypt](screenshots/decrypt-v2.png)
 
+### About
+
+![about](screenshots/about.png)
+
 ## 📚 Concepts Used
 
 - Functions
